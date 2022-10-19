@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page-Title -->
+<section class="page-title centred" style="background-image: url({% static 'images/background/who-we-are.jpg' %});">
+    <div class="container">
+        <div class="content-box">
+            <div class="title">Who We Are</div>
+            <ul class="bread-crumb">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Who We Are</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Page-Title End -->
+
+<!-- We-Are-Section -->
+<section class="we-are-section sec-pad">
+    <div class="container">
+        <div class="sec-title centred">Who We Are?</div>
+        <div class="top-text centred">We are a Christian non-profit making organization and a child advocacy ministry pairing people who have compassion with the poor, orphaned and other vulnerable children so as to release them from spiritual, economic, social and physical poverty.</div>
+        <div class="custom-tab-title centred">
+            <ul class="tab-title clearfix">
+                <li data-tab-name="details" class="active">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-target"></i></div>
+                        <div class="text">Our Mission</div>
+                    </div>
+                </li>
+                <li data-tab-name="review">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-binoculars"></i></div>
+                        <div class="text">Our Vision</div>
+                    </div>
+                </li>
+                <li data-tab-name="review1">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-comment"></i></div>
+                        <div class="text">Our Message</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-details-content">
+            <div class="tab-content" id="details">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/feel-for-poor-mission-vision.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Mission</div>
+                                <div class="text">
+                                    <p>To restore hope among the poor, orphaned and  the vulnerable children and communities that have been affected by poverty, abuse, violence, disease, displacement and other natural and social calamities.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="review">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/child-mission-vision.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Vision</div>
+                                <div class="text">
+                                    <p>Communities where children and their parents/guardians are empowered to improve their own livelihood through appropriate and affordable alternatives.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="review1">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/Jackson.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Message From the Executive Director</div>
+                                <div class="text">
+                                    <p><acronym title="Create Life Again Ministries">CRELAM</acronym> (Create Life Again Ministries) is a Christian child care and  development ministry aimed at releasing children from spiritual, economic, social and physical poverty in Jesus’ name. We are community-based: We believe that Christianity is God’s chosen instrument to bring hope to a hurting world. We also believe that children are an inheritance from the lord God and so should be protected and guarded if this role is to be harnessed.  We feel that their needs should be addressed holistically to ensure that God’s intended purpose for them is realized. Our vision, mission and strategic objectives are focused towards achieving the overall purpose of God for these children. We show the love of Jesus to the needy and vulnerable children and their families so as to make the good news of the gospel acceptable to the communities.</p>
+                                    <p>We are child-focused: CRELAM is focused on the individual child and his/her development. We offer this assistance irrespective of caste, creed, class or religion. At CRELAM, we believe entire communities will feel the positive impact of our presence because what happens in the life of a child ripples throughout his or her environment. We are Christ-centered: Jesus is the core of our ministry and his life and teachings shape our programs. They reflect the spiritual commitments of our staff. And they guide how we love people, respect communities and cooperate with nations. We are committed to integrity: We hold ourselves to the highest professional and biblical principles in all aspects of our ministry and maintain the highest industry standards for our allocation of funds. We are looking forward to welcoming child development partners from all over the world to partner with us to foster the work of God in the poor, orphaned and other vulnerable children.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- We-Are-Section End -->
+{% endblock content %}

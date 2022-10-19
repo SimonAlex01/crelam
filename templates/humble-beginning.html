@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page-Title -->
+<section class="page-title centred" style="background-image: url({% static 'images/background/who-we-are.jpg' %});">
+    <div class="container">
+        <div class="content-box">
+            <div class="title">Humble Beginning</div>
+            <ul class="bread-crumb">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Who We Are</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Page-Title End -->
+
+<!-- Cause-Details -->
+<section class="cause-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="cause-details-content">
+                    <div class="content-style-one">
+                        <figure class="img-box"><img src="{% static 'images/resource/crelam-cause-01-details.jpg' %}" alt=""></figure>
+                        <div class="title">Humble Beginning</div>
+                        <div class="single-cause-content clearfix">
+                            <div class="lower-content">
+                                <div class="progress-box">
+                                    <div class="progress" data-value="10">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="value-holder"><span class="value"></span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <ul class="price clearfix">
+                                    <li>Raised: <span>$6,000</span></li>
+                                    <li>Goal: <span>$8,000</span></li>
+                                </ul> -->
+                            </div>
+                            <!-- <div class="donate-box"><button class="donate-box-btn theme-btn-two">Donate Now</button></div> -->
+                        </div>
+                        <div class="text">We are a nationwide ministry in Uganda in which thousands of children will reap the benefits of one man’s clear God-given vision. Three years ago, Mr. Mugizi Jackson, a former district planner Bushenyi district in Uganda became increasingly troubled by the sight of thousands of poor, orphaned and other vulnerable children in Uganda living on streets and abandoned by society. They had no food, no security, no education, no clothes and no care at all from any source. This situation is due to absolute poverty, domestic violence, and diseases (especially HIV/AIDs which cause several deaths of parents in homes leaving behind many orphans with no one to care for them). Municipal workers of one town one day, collected several dead bodies of some of these children and put them on the truck. These had died as a result of thunderstorms that hit them in the previous day. Looking at them, Mr. Mugizi Jackson thought of how to bring life again for these children. He decided to leave his lucrative job to form CRELAM (Create Life Again Ministries), an organization that would see the situation of these children change for better. He used his gratuity proceeds to start this organization. Today, 170 children are receiving full education in a primary school and it is hoped that the future of these children will be better.</div>
+                        <div class="bg-text">We are a Christian non-profit making organization and a child advocacy ministry pairing people who have compassion with the poor, orphaned and other vulnerable children so as to release them from spiritual, economic, social and physical poverty.</div>
+                    </div>
+                    <!-- <div class="content-style-two">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 col-sm-12 column">
+                                <figure class="img-box"><img src="images/resource/5.jpg" alt=""></figure>
+                            </div>
+                            <div class="col-lg-7 col-md-12 col-sm-12 column">
+                                <div class="right-content">
+                                    <h3>Our Work Process</h3>
+                                    <ul class="list">
+                                        <li>Lorem Ipsum is simply printing and typesetting industry.</li>
+                                        <li>When unknow printer took gallery something.</li>
+                                        <li>Lorem Ipsum is simply printing and typesetting industry.</li>
+                                        <li>When unknow printer took gallery something.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">When an unknown printer took a galley of type and scrambled it dsu make a type specimen book. It has survived only five centuries, but also the leap into electronic typesetting.remaining essentially unchanged. It was popularised in the 1960s with the release sheets containing.</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="sidebar default-sidebar-content cause-sidebar-content">
+                    <!-- <div class="sidebar-search sidebar-widget">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="search" name="search-field" placeholder="Search Here.." required="">
+                                <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                    </div> -->
+                    <div class="sidebar-categories sidebar-widget">
+                        <div class="sidebar-title">Related Links</div>
+                        <ul class="categories-list">
+                            <li><a href="{% url 'humble-beginning' %}">Humble Beginning</a></li>
+                            <li><a href="#">Child Development Model</a></li>
+                            <li><a href="#">Feel for the Poor Families</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cause-Details End -->
+{% endblock content %}

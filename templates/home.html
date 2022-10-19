@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Main Slider-->
+<section class="main-slider slider-style-four">
+    <div class="main-slider-carousel owl-carousel owl-theme slide-nav">
+        
+        <div class="slide" style="background-image:url({% static 'images/main-slider/humble beginning.jpg' %})">
+            <div class="container">
+                <div class="content">
+                    <h1>Humble <br />Beginning</h1>
+                    <div class="text">We are a nationwide ministry in Uganda in which thousands of children <br /> will reap the benefits of one man’s clear God-given vision.</div>
+                    <!-- <div class="donate-box"><button class="donate-box-btn theme-btn"><a href="{% url 'who-we-are' %}#humble-beginning">Read More</a></button></div> -->
+                    <div class="donate-box"><button class="donate-box-btn theme-btn" onClick="window.location.href='{% url 'humble-beginning' %}';">Read More</button></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide" style="background-image:url({% static 'images/main-slider/child-development.jpg' %})">
+            <div class="container">
+                <div class="content">
+                    <h1>Our Child <br />Development Model</h1>
+                    <div class="text">Through our holistic child development model, we tackle all the nature of poverty <br /> that surrounds the poor, orphaned and other vulnerable children.</div>
+                    <!-- <div class="donate-box"><button class="donate-box-btn theme-btn"><a href="{% url 'who-we-are' %}#child-development">Read More</a></button></div> -->
+                    <div class="donate-box"><button class="donate-box-btn theme-btn" onClick="window.location.href='{% url 'child-development' %}';">Read More</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url({% static 'images/main-slider/feel-for-poor.jpg' %})">
+            <div class="container">
+                <div class="content">
+                    <h1>Feel for the Poor <br />Children</h1>
+                    <div class="text">We feel that the poor, orphaned and other vulnerable if set free from this bondage of poverty <br />can come up into an era of freedom from poverty and its associated setbacks.</div>
+                    <!-- <div class="donate-box"><button class="donate-box-btn theme-btn"><a href="{% url 'who-we-are' %}#feel-for-poor">Read More</a></button></div> -->
+                    <div class="donate-box"><button class="donate-box-btn theme-btn" onClick="window.location.href='{% url 'feel-for-poor' %}';">Read More</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Main Slider-->
+
+<!-- We-Are-Section -->
+<section class="we-are-section sec-pad">
+    <div class="container">
+        <div class="sec-title centred">Who We Are?</div>
+        <div class="top-text centred">We are a Christian non-profit making organization and a child advocacy ministry pairing people who have compassion with the poor, orphaned and other vulnerable children so as to release them from spiritual, economic, social and physical poverty.</div>
+        <div class="custom-tab-title centred">
+            <ul class="tab-title clearfix">
+                <li data-tab-name="details" class="active">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-target"></i></div>
+                        <div class="text">Our Mission</div>
+                    </div>
+                </li>
+                <li data-tab-name="review">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-binoculars"></i></div>
+                        <div class="text">Our Vision</div>
+                    </div>
+                </li>
+                <li data-tab-name="review1">
+                    <div class="single-btn">
+                        <div class="icon-box"><i class="flaticon-comment"></i></div>
+                        <div class="text">Our Message</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-details-content">
+            <div class="tab-content" id="details">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/feel-for-poor-mission-vision.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Mission</div>
+                                <div class="text">
+                                    <p>To restore hope among the poor, orphaned and  the vulnerable children and communities that have been affected by poverty, abuse, violence, disease, displacement and other natural and social calamities.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="review">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/child-mission-vision.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Vision</div>
+                                <div class="text">
+                                    <p>Communities where children and their parents/guardians are empowered to improve their own livelihood through appropriate and affordable alternatives.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="review1">
+                <div class="single-tab-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="img-box"><img src="{% static 'images/resource/Jackson.jpg' %}" alt=""></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="title">Message From the Executive Director</div>
+                                <div class="text">
+                                    <p><acronym title="Create Life Again Ministries">CRELAM</acronym> (Create Life Again Ministries) is a Christian child care and  development ministry aimed at releasing children from spiritual, economic, social and physical poverty in Jesus’ name. We are community-based: We believe that Christianity is God’s chosen instrument to bring hope to a hurting world. We also believe that children are an inheritance from the lord God and so should be protected and guarded if this role is to be harnessed.  We feel that their needs should be addressed holistically to ensure that God’s intended purpose for them is realized. Our vision, mission and strategic objectives are focused towards achieving the overall purpose of God for these children. We show the love of Jesus to the needy and vulnerable children and their families so as to make the good news of the gospel acceptable to the communities.</p>
+                                    <p>We are child-focused: CRELAM is focused on the individual child and his/her development. We offer this assistance irrespective of caste, creed, class or religion. At CRELAM, we believe entire communities will feel the positive impact of our presence because what happens in the life of a child ripples throughout his or her environment. We are Christ-centered: Jesus is the core of our ministry and his life and teachings shape our programs. They reflect the spiritual commitments of our staff. And they guide how we love people, respect communities and cooperate with nations. We are committed to integrity: We hold ourselves to the highest professional and biblical principles in all aspects of our ministry and maintain the highest industry standards for our allocation of funds. We are looking forward to welcoming child development partners from all over the world to partner with us to foster the work of God in the poor, orphaned and other vulnerable children.</p>
+                                </div>
+                                <div class="link"><a href="{% static 'files/Crelam-Ministries-Constitution.pdf' %}" target="_blank" class="theme-btn">More About Us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- We-Are-Section End -->
+
+<!-- Cta-Section -->
+<section class="cta-section overlay-bg centred">
+<!-- <section class="cta-section overlay-bg centred" style="background-image: url(images/background/cta-bg-4.jpg);"> -->
+    <div class="container">
+        <div class="content-box">
+            <div class="title">Crelam Ministries</div>
+            <div class="text">We Believe that Christianity is God's Chosen Instrument to Bring Hope to a Hurting World.</div>
+            <div class="donate-box"><button class="donate-box-btn theme-btn">Read More</button></div>
+        </div>
+    </div>
+</section>
+<!-- Cta-Section End -->
+
+<!-- Causes-Section -->
+<section class="cause-section cause-style-four overlay-style-one sec-pad">
+    <div class="container">
+        <div class="sec-title centred">Featured Causes</div>
+        <div class="title-text centred">Crelam Ministries is involved in several causes, and the most popular ones are highlighted below</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 cause-column">
+                <div class="single-cause-content inner-box">
+                    <figure class="image-box">
+                        <img src="{% static 'images/resource/crelam-cause-01.jpg' %}" alt="Humble Beginning Cause">
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="#" class="link"><i class="icon fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="lower-content">
+                        <h4><a href="#">Humble Beginning</a></h4>
+                        <div class="text">We are a nationwide ministry in Uganda in which thousands of children <br /> will reap the benefits of one man’s clear God-given vision.</div>
+                        <div class="progress-box">
+                            <div class="progress" data-value="10">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="value-holder"><span class="value"></span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <ul class="price clearfix">
+                            <li>Raised: <span>$6,000</span></li>
+                            <li>Goal: <span>$8,000</span></li>
+                        </ul> -->
+                        <!-- <div class="donate-box"><button class="donate-box-btn theme-btn-two">Donate Now</button></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 cause-column">
+                <div class="single-cause-content inner-box">
+                    <figure class="image-box">
+                        <img src="{% static 'images/resource/crelam-cause-02.jpg' %}" alt="Child Development Cause">
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="#" class="link"><i class="icon fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="lower-content">
+                        <h4><a href="#">Our Child Development Model</a></h4>
+                        <div class="text">Through our holistic child development model, we tackle all the nature of poverty <br /> that surrounds the poor, orphaned and other vulnerable children.</div>
+                        <div class="progress-box">
+                            <div class="progress" data-value="10">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="value-holder"><span class="value"></span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <ul class="price clearfix">
+                            <li>Raised: <span>$2,000</span></li>
+                            <li>Goal: <span>$4,000</span></li>
+                        </ul> -->
+                        <!-- <div class="donate-box"><button class="donate-box-btn theme-btn-two">Donate Now</button></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 cause-column">
+                <div class="single-cause-content inner-box">
+                    <figure class="image-box">
+                        <img src="{% static 'images/resource/crelam-cause-03.jpg' %}" alt="Feel for the Poor Cause">
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="#" class="link"><i class="icon fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="lower-content">
+                        <h4><a href="#">Feel for the Poor Children</a></h4>
+                        <div class="text">We feel that the poor, orphaned and other vulnerable if set free from this bondage of poverty can come up into an era of freedom from poverty and its associated setbacks.</div>
+                        <div class="progress-box">
+                            <div class="progress" data-value="10">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="value-holder"><span class="value"></span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <ul class="price clearfix">
+                            <li>Raised: <span>$1,000</span></li>
+                            <li>Goal: <span>$3,000</span></li>
+                        </ul> -->
+                        <!-- <div class="donate-box"><button class="donate-box-btn theme-btn-two">Donate Now</button></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Causes-Section End -->
+{% endblock content %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page-Title -->
+<section class="page-title centred" style="background-image: url({% static 'images/background/who-we-are.jpg' %});">
+    <div class="container">
+        <div class="content-box">
+            <div class="title">What We Do</div>
+            <ul class="bread-crumb">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>What We Do</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Page-Title End -->
+
+<!-- Event-Details -->
+<section class="event-details sec-pad-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="event-details-content">
+                    <div class="content-style-one">
+                        <figure class="img-box">
+                            <img src="{% static 'images/resource/crelam-details-01.jpg' %}" alt="Humble Beginning">
+                            <div class="date"><span>19</span>OCTOBER</div>
+                        </figure>
+                        <div class="top-content">
+                            <div class="sec-title">What We Do</div>
+                            <!-- <ul class="info-box">
+                                <li><i class="fa fa-clock-o"></i>9:00am-5:00pm</li>
+                                <li><i class="fa fa-map-marker"></i>Mirpur, Dhaka</li>
+                            </ul> -->
+                        </div>
+                        <!-- <div class="title"><h3></h3></div> -->
+                        <ul class="check-list">
+                            <li>We help children get out of poverty in the name of Jesus. Our mission is to restore hope among the poor, orphaned and other vulnerable children and their respective communities that have been affected by poverty, abuse, violence, disease displacement and other natural and social calamities. We carefully blend physical, economic and spiritual care in the mighty name of Jesus.</li>
+                            <li>We help develop children into all that God has intended them to be. CRELAM equips children today with skills to succeed in life tomorrow. We provide a child with an opportunity that encourages the development of all aspects of life of that child (that is, spiritual, physical, emotionally, and even economically).</li>
+                            <li>Our child assistance is holistic in sense that we begin assisting a child in poverty when he is still below five years and we go all the way until when he is 22 years.</li>
+                            <li>Our work is made effective with the help of community leaders including those in the church and local councils. These leaders' partnership with us tailors our holistic child assistance model to the contextualized needs of these  children in their respective communities to best deliver the complete-life care the children are highly in need.</li>
+                            <li>We work mainly through donations to our organization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="sidebar default-sidebar-content cause-sidebar-content">
+                    <!-- <div class="sidebar-search sidebar-widget">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="search" name="search-field" placeholder="Search Here.." required="">
+                                <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                    </div> -->
+                    <div class="sidebar-categories sidebar-widget">
+                        <div class="sidebar-title">Related Links</div>
+                        <ul class="categories-list">
+                            <li><a href="{% url 'humble-beginning' %}">Humble Beginning</a></li>
+                            <li><a href="{% url 'child-development' %}">Child Development Model</a></li>
+                            <li><a href="{% url 'feel-for-poor' %}">Feel for the Poor Families</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Event-Details End -->
+{% endblock content %}
