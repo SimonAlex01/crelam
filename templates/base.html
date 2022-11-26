@@ -36,8 +36,8 @@
                         <div class="icon-box"><i class="flaticon-phone-call"></i></div>
                         <ul>
                             <li>
-                                <strong>+256 772 578 928</strong>
-                                mugizijackson@gmail.com
+                                <strong>+256772578928 | +18039602594</strong>
+                                crelam22@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -50,9 +50,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="upper-column info-box donate-box">
-                        <button class="donate-box-btn theme-btn">Donate Now</button>
-                    </div> -->
+                    <div class="upper-column info-box donate-box">
+                        <button class="donate-box-btn theme-btn" onclick="window.location.href='{% url 'donate' %}';">Donate Now</button>
+                    </div>
                 </div>
             </div>
         </div><!-- header-upper end -->
@@ -90,6 +90,7 @@
                                                 <li><a href="{% static 'files/Crelam-Ministries-Strategic-Plan-2022-2027.pdf' %}" target="_blank">Strategic Plan</a></li>
                                             </ul>
                                         </li>                            
+                                        <li><a href="{% url 'donate' %}">Sponsor Child</a></li>
                                         <li><a href="{% url 'contact' %}">Contact</a></li>
                                     </ul>
                                 </div>
@@ -195,6 +196,7 @@
                                 <li><a href="{% url 'home' %}">Home</a></li>
                                 <li><a href="{% url 'who-we-are' %}">Who We Are</a></li>
                                 <li><a href="{% url 'what-we-do' %}">What We Do</a></li>
+                                <li><a href="{% url 'donate' %}">Sponsor a Child</a></li>
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
                             </ul>
                         </div>
@@ -204,8 +206,8 @@
                             <div class="footer-title">Contacts</div>
                             <div class="text">
                                 <p>Mbarara, Uganda</p>
-                                <p>+256 772 578 928</p>
-                                <p>mugizijackson@gmail.com</p>
+                                <p>+256772578928 | +18039602594</p>
+                                <p>crelam22@gmail.com</p>
                             </div>
                         </div>
                     </div>

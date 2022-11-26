@@ -22,3 +22,6 @@ class WhatWeDoPageView(TemplateView):
 
 class ContactPageView(TemplateView):
     template_name = 'contact.html'
+
+class DonatePageView(TemplateView):
+    template_name = 'donate.html'
